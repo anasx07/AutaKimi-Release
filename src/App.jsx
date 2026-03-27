@@ -55,7 +55,7 @@ function App() {
   ]
 
   const faqs = [
-    { q: "Is LManwa free and open-source?", a: "Yes, LManwa is 100% free and open-source with no ads or trackers." },
+    { q: "Is AutaKimi free and open-source?", a: "Yes, LManwa is 100% free and open-source with no ads or trackers." },
     { q: "How do I install extensions?", a: "Extensions are self-contained and pre-installed in the application for immediate native browsing." },
     { q: "Does it support offline reading?", a: "Yes, you can download chapters to read them fully offline anytime." }
   ]
@@ -71,7 +71,7 @@ function App() {
         <div className="nav-container">
           <div className="nav-logo">
             <img src="assets/icon.png" alt="Logo" className="nav-icon" />
-            <span>LManwa</span>
+            <span>AutaKimi</span>
           </div>
           <div className="nav-links">
             <a href="#features">Features</a>
@@ -90,7 +90,7 @@ function App() {
             <img src="assets/icon.png" alt="LManwa Icon" className="app-icon" />
           </div>
           <span className="badge">Version 1.0.13</span>
-          <h1>LManwa</h1>
+          <h1>AutaKimi</h1>
           <p>
             The ultimate manga experience on Windows. 
             Open-source, extensible, and built for speed.
@@ -102,7 +102,14 @@ function App() {
               className="download-btn"
             >
               <Download className="inline-icon" />
-              Download for Windows
+              Repo Release Page
+            </a>
+             <a 
+              href="https://github.com/anasx07/LManwa/releases/latest" 
+              className="download-btn"
+            >
+              <Download className="inline-icon" />
+              One Click Download for Windows
             </a>
           </div>
         </div>

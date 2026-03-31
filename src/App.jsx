@@ -99,13 +99,13 @@ function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-[fadeIn_0.8s_ease_forwards_1s]">
-            <a href="https://github.com/anasx07/AutaKimi/releases/latest" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white text-black px-12 py-4.5 rounded-2xl font-bold text-lg hover:bg-primary hover:text-white transition-all hover:scale-105 shadow-xl hover:shadow-primary/20">
+            <a href="https://github.com/anasx07/AutaKimi-Release/releases/latest" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white text-black px-12 py-4.5 rounded-2xl font-bold text-lg hover:bg-primary hover:text-white transition-all hover:scale-105 shadow-xl hover:shadow-primary/20">
               <Download className="w-5 h-5" />
               Repo Release Page
             </a>
-            <a href="https://github.com/anasx07/AutaKimi-Release/releases/download/v1.0.52/AutaKimi.exe" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white/5 text-white px-12 py-4.5 rounded-2xl font-bold border border-white/10 hover:bg-white/10 transition-all hover:scale-105">
+            <a href="https://github.com/anasx07/AutaKimi-Release/releases/download/latest/AutaKimi.exe" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white/5 text-white px-12 py-4.5 rounded-2xl font-bold border border-white/10 hover:bg-white/10 transition-all hover:scale-105">
               <Download className="w-5 h-5" />
-               Download Installer
+              Download Installer
             </a>
           </div>
         </div>
@@ -155,7 +155,7 @@ function App() {
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i} className="glass-card rounded-2xl overflow-hidden">
-              <button 
+              <button
                 className="w-full p-6 flex justify-between items-center text-left font-bold text-lg hover:bg-white/5 transition-colors"
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
               >

@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://anasx07.github.io/AutaKimi-Release/sitemap.xml

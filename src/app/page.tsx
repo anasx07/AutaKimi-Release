@@ -2,6 +2,7 @@
 
 import { Download, BookOpen, Puzzle, History, Search, Zap, ChevronDown, Globe } from 'lucide-react'
 import { useState } from 'react'
+import Image from 'next/image'
 
 import AuroraShader from '@/components/backgrounds/AuroraShader'
 import StarfieldShader from '@/components/backgrounds/StarfieldShader'
@@ -74,7 +75,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 w-full py-4 z-50 bg-black/60 backdrop-blur-xl border-b border-white/10 animate-fade-in">
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img src="/AutaKimi-Release/assets/icon.png" alt="Logo" className="w-8 h-8 rounded-lg shadow-lg" />
+            <Image src="/AutaKimi-Release/assets/icon.png" alt="Logo" width={32} height={32} className="w-8 h-8 rounded-lg shadow-lg" />
             <span className="font-extrabold text-xl tracking-tighter">AutaKimi</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
@@ -92,7 +93,7 @@ export default function Home() {
       <header className="pt-32 pb-16 w-full flex justify-center">
         <div className="glass-card rounded-[32px] p-10 md:p-16 max-w-[680px] w-[90%] text-center hero-animate">
           <div className="mb-8 flex justify-center opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.4s]">
-            <img src="/AutaKimi-Release/assets/icon.png" alt="AutaKimi Icon" className="w-[100px] h-[100px] rounded-3xl shadow-2xl" />
+            <Image src="/AutaKimi-Release/assets/icon.png" alt="AutaKimi Icon" width={100} height={100} className="w-[100px] h-[100px] rounded-3xl shadow-2xl" />
           </div>
           <span className="premium-pill mb-6 opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.4s]">Version 1.0.52</span>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-5 text-gradient opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.6s]">AutaKimi</h1>
@@ -142,7 +143,7 @@ export default function Home() {
                 <p className="text-zinc-400 text-lg leading-relaxed">{s.description}</p>
               </div>
               <div className={cn("relative rounded-3xl overflow-hidden glass-card transform perspective-1000 rotate-x-2 hover:rotate-x-0 transition-all group", s.reverse && "lg:order-1")}>
-                <img src={s.image} alt={s.title} className="w-full group-hover:scale-105 transition-transform duration-700" />
+                <Image src={s.image} alt={s.title} width={1280} height={800} className="w-full group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
             </div>

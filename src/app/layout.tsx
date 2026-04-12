@@ -14,8 +14,8 @@ const outfit = Outfit({
 export const metadata = {
   metadataBase: new URL("https://anasx07.github.io/AutaKimi-Release"),
   title: "AutaKimi - The Ultimate Manga Reader",
-  description: "The ultimate manga experience on Windows. Open-source, extensible, and built for speed.",
-  keywords: ["Manga", "Reader", "Windows", "AutaKimi", "Anime", "Open Source", "Extensions", "Arabic localization"],
+  description: "The ultimate manga experience on Windows. Free, extensible, and built for speed.",
+  keywords: ["Manga", "Reader", "Windows", "AutaKimi", "Anime", "Free", "Extensions", "Arabic localization"],
   icons: {
     icon: "/AutaKimi-Release/favicon.svg",
     shortcut: "/AutaKimi-Release/favicon.svg",
@@ -23,7 +23,7 @@ export const metadata = {
   },
   openGraph: {
     title: "AutaKimi - The Ultimate Manga Reader",
-    description: "The ultimate manga experience on Windows. Open-source, extensible, and built for speed.",
+    description: "The ultimate manga experience on Windows. Free, extensible, and built for speed.",
     url: "https://anasx07.github.io/AutaKimi-Release",
     siteName: "AutaKimi",
     images: [

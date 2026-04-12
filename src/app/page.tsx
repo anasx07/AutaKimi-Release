@@ -1,6 +1,6 @@
 "use client";
 
-import { Download, BookOpen, Puzzle, History, Search, Zap, ChevronDown, Globe } from 'lucide-react'
+import { Download, BookOpen, Puzzle, History, Search, Zap, ChevronDown, Globe, Smartphone, MonitorSmartphone, Database, Cpu } from 'lucide-react'
 import { useState } from 'react'
 import Image from 'next/image'
 
@@ -41,6 +41,11 @@ export default function Home() {
       icon: <Download className="w-6 h-6" />,
       title: "Fast & Lightweight",
       description: "Built with performance in mind for a smooth, lag-free experience."
+    },
+    {
+      icon: <MonitorSmartphone className="w-6 h-6" />,
+      title: "Cross-Platform (Soon)",
+      description: "Currently available on Windows. Uncompromising native apps for macOS, Linux, and Mobile arriving shortly."
     }
   ]
 
@@ -61,7 +66,7 @@ export default function Home() {
   ]
 
   const faqs = [
-    { q: "Is AutaKimi free and open-source?", a: "Yes, AutaKimi is 100% free and open-source with no ads or trackers." },
+    { q: "Is AutaKimi free to use?", a: "Yes, AutaKimi is 100% free to use with no ads or tracking." },
     { q: "How do I install extensions?", a: "Extensions are self-contained and pre-installed in the application for immediate native browsing." },
     { q: "Does it support offline reading?", a: "Yes, you can download chapters to read them fully offline anytime." }
   ]
@@ -95,11 +100,11 @@ export default function Home() {
           <div className="mb-8 flex justify-center opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.4s]">
             <Image src="/AutaKimi-Release/assets/icon.png" alt="AutaKimi Icon" width={100} height={100} className="w-[100px] h-[100px] rounded-3xl shadow-2xl" />
           </div>
-          <span className="premium-pill mb-6 opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.4s]">Version 1.0.52</span>
+          <span className="premium-pill mb-6 opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.4s]">Version 1.5.71</span>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-5 text-gradient opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.6s]">AutaKimi</h1>
           <p className="text-lg md:text-xl text-zinc-400 max-w-[500px] mx-auto mb-12 leading-relaxed opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.8s]">
             The ultimate manga experience on Windows.
-            Open-source, extensible, and built for speed.
+            Free, extensible, and built for speed.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-[fadeIn_0.8s_ease_forwards_1s]">
@@ -148,6 +153,36 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id="tech-stack" className="py-24 px-6 max-w-6xl w-full">
+        <div className="text-center mb-16 space-y-4">
+          <span className="premium-pill">Architecture</span>
+          <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gradient">Built for Speed & Reliability</h2>
+          <p className="text-zinc-400 max-w-2xl mx-auto text-lg pt-4">AutaKimi is engineered as an offline-first powerhouse using industry-leading technologies to guarantee maximum performance.</p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="glass-card p-8 rounded-3xl flex flex-col items-center justify-center text-center group hover:bg-white/[0.05] transition-all hover:-translate-y-2">
+            <Cpu className="w-10 h-10 mb-4 text-white group-hover:text-primary transition-colors" />
+            <h3 className="font-bold text-lg">Electron + React 19</h3>
+            <p className="text-xs text-zinc-500 mt-2">Next-generation UI rendering</p>
+          </div>
+          <div className="glass-card p-8 rounded-3xl flex flex-col items-center justify-center text-center group hover:bg-white/[0.05] transition-all hover:-translate-y-2">
+            <Database className="w-10 h-10 mb-4 text-white group-hover:text-primary transition-colors" />
+            <h3 className="font-bold text-lg">Drizzle & SQLite</h3>
+            <p className="text-xs text-zinc-500 mt-2">Instant offline data access</p>
+          </div>
+          <div className="glass-card p-8 rounded-3xl flex flex-col items-center justify-center text-center group hover:bg-white/[0.05] transition-all hover:-translate-y-2">
+            <Zap className="w-10 h-10 mb-4 text-white group-hover:text-primary transition-colors" />
+            <h3 className="font-bold text-lg">Tailwind CSS v4</h3>
+            <p className="text-xs text-zinc-500 mt-2">Premium fluid design system</p>
+          </div>
+          <div className="glass-card p-8 rounded-3xl flex flex-col items-center justify-center text-center group hover:bg-white/[0.05] transition-all hover:-translate-y-2">
+            <Smartphone className="w-10 h-10 mb-4 text-white group-hover:text-primary transition-colors" />
+            <h3 className="font-bold text-lg">Cross-Compiled</h3>
+            <p className="text-xs text-zinc-500 mt-2">React Native mobile architecture</p>
+          </div>
         </div>
       </section>
 

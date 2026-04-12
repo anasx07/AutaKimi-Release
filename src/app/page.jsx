@@ -44,13 +44,13 @@ export default function Home() {
       badge: "Customization",
       title: "Premium Themes",
       description: "Make AutaKimi yours. Choose from a variety of premium themes, ranging from classic dark modes to character-inspired aesthetics.",
-      image: "/assets/screenshot-themes.png" // Updated path
+      image: "/AutaKimi-Release/assets/screenshot-themes.png" // Updated path
     },
     {
       badge: "Discovery",
       title: "Smart Search & Filters",
       description: "Find your next read across connected translation sources instantly with deep filters support.",
-      image: "/assets/screenshot-themes.png", // Updated path
+      image: "/AutaKimi-Release/assets/screenshot-themes.png", // Updated path
       reverse: true
     }
   ]
@@ -72,7 +72,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 w-full py-4 z-50 bg-black/60 backdrop-blur-xl border-b border-white/10 animate-fade-in">
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img src="/assets/icon.png" alt="Logo" className="w-8 h-8 rounded-lg shadow-lg" />
+            <img src="/AutaKimi-Release/assets/icon.png" alt="Logo" className="w-8 h-8 rounded-lg shadow-lg" />
             <span className="font-extrabold text-xl tracking-tighter">AutaKimi</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
@@ -90,7 +90,7 @@ export default function Home() {
       <header className="pt-32 pb-16 w-full flex justify-center">
         <div className="glass-card rounded-[32px] p-10 md:p-16 max-w-[680px] w-[90%] text-center hero-animate">
           <div className="mb-8 flex justify-center opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.4s]">
-            <img src="/assets/icon.png" alt="AutaKimi Icon" className="w-[100px] h-[100px] rounded-3xl shadow-2xl" />
+            <img src="/AutaKimi-Release/assets/icon.png" alt="AutaKimi Icon" className="w-[100px] h-[100px] rounded-3xl shadow-2xl" />
           </div>
           <span className="premium-pill mb-6 opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.4s]">Version 1.0.52</span>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-5 text-gradient opacity-0 animate-[fadeIn_0.8s_ease_forwards_0.6s]">AutaKimi</h1>

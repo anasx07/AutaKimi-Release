@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
+
   --color-primary: #8b5cf6;
   --color-primary-light: #a78bfa;
   --color-background: #050505;
@@ -49,7 +52,7 @@
   }
 
   body {
-    @apply m-0 font-sans bg-background text-white overflow-x-hidden;
+    @apply m-0 bg-background text-white overflow-x-hidden;
   }
 
   * {

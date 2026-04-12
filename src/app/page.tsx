@@ -3,6 +3,10 @@
 import { Download, BookOpen, Puzzle, History, Search, Zap, ChevronDown, Globe } from 'lucide-react'
 import { useState } from 'react'
 
+import AuroraShader from '@/components/backgrounds/AuroraShader'
+import StarfieldShader from '@/components/backgrounds/StarfieldShader'
+import CyberGridShader from '@/components/backgrounds/CyberGridShader'
+
 export default function Home() {
   const [openFaq, setOpenFaq] = useState(null)
 
@@ -63,11 +67,9 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen flex flex-col items-center selection:bg-primary/30">
-      {/* Animated Mesh Background */}
-      <div className="fixed inset-0 z-[-1] bg-[radial-gradient(circle_at_50%_50%,#0a0a0c_0%,#050505_100%)] overflow-hidden">
-        <div className="absolute top-[5%] left-[5%] w-[70vmax] h-[70vmax] bg-primary/[0.05] rounded-full blur-[100px] float-animate" />
-        <div className="absolute bottom-[5%] right-[5%] w-[70vmax] h-[70vmax] bg-primary/[0.03] rounded-full blur-[100px] float-animate" />
-      </div>
+      {/* Interactive WebGL Shader Background (Swap with StarfieldShader or CyberGridShader) */}
+      <StarfieldShader />
+
 
       <nav className="fixed top-0 left-0 w-full py-4 z-50 bg-black/60 backdrop-blur-xl border-b border-white/10 animate-fade-in">
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">

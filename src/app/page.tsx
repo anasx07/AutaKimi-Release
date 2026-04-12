@@ -179,7 +179,7 @@ export default function Home() {
       </section>
 
       <footer className="py-12 text-zinc-600 text-sm font-medium">
-        <p>© {new Date().getFullYear()} AutaKimi. Built with passion for readers.</p>
+        <p>© {new Date().getFullYear()} AutaKimi. Built with passion for Anime & Manga Community.</p>
       </footer>
     </div>
   )

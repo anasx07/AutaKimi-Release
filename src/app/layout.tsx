@@ -17,8 +17,8 @@ export const metadata = {
   description: "The ultimate manga experience on Windows. Free, extensible, and built for speed.",
   keywords: ["Manga", "Reader", "Windows", "AutaKimi", "Anime", "Free", "Extensions", "Arabic localization"],
   icons: {
-    icon: "/AutaKimi-Release/favicon.svg",
-    shortcut: "/AutaKimi-Release/favicon.svg",
+    icon: "/AutaKimi-Release/favicon.png",
+    shortcut: "/AutaKimi-Release/favicon.png",
     apple: "/AutaKimi-Release/assets/icon.png",
   },
   openGraph: {

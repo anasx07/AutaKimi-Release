@@ -9,6 +9,7 @@ import GitHubButton from '@/components/ui/github-button'
 import { MediaButton } from '@/components/ui/media-button'
 import StarfieldShader from '@/components/backgrounds/StarfieldShader'
 import CyberGridShader from '@/components/backgrounds/CyberGridShader'
+import { GlowCard } from '@/components/ui/spotlight-card'
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState(null)
@@ -160,13 +161,19 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f, i) => (
-            <div key={i} className="glass-card p-10 rounded-3xl group hover:bg-white/[0.05] transition-all hover:-translate-y-2 opacity-0 animate-fade-in" style={{ animationDelay: `${0.2 + i * 0.1}s` }}>
-              <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 text-white group-hover:text-primary transition-colors">
+            <GlowCard 
+              key={i} 
+              customSize 
+              glowColor="purple" 
+              className="p-10 group transition-transform duration-500 hover:-translate-y-2 opacity-0 animate-fade-in cursor-default" 
+              style={{ animationDelay: `${0.2 + i * 0.1}s` }}
+            >
+              <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 text-white group-hover:text-purple-400 transition-colors">
                 {f.icon}
               </div>
-              <h3 className="text-xl font-bold mb-3">{f.title}</h3>
-              <p className="text-zinc-400 leading-relaxed text-sm">{f.description}</p>
-            </div>
+              <h3 className="text-xl font-bold mb-3 z-10 relative">{f.title}</h3>
+              <p className="text-zinc-400 leading-relaxed text-sm z-10 relative">{f.description}</p>
+            </GlowCard>
           ))}
         </div>
       </section>
